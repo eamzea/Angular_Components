@@ -1,18 +1,6 @@
+<app-navbar></app-navbar>
 <div class="container">
-  <h1>Demo <small>Angular</small></h1>
+  <h1>Demos <small>Angular</small></h1>
   <hr />
-  <div class="my-5">
-    <app-ng-style></app-ng-style>
-    <hr />
-    <app-class></app-class>
-    <hr />
-    <p appStandOut>
-      Hello World
-    </p>
-    <p [appStandOut]="'red'">
-      Hello World
-    </p>
-    <hr />
-    <app-ng-switch></app-ng-switch>
-  </div>
+  <router-outlet></router-outlet>
 </div>
