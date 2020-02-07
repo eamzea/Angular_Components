@@ -1,16 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
+import { NgStyleComponent } from "./components/ng-style/ng-style.component";
+import { ClassComponent } from './components/class/class.component';
+import { StandOutDirective } from './directives/stand-out.directive';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, NgStyleComponent, ClassComponent, StandOutDirective, NgSwitchComponent],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
